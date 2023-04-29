@@ -1,7 +1,7 @@
 class Superclass {
   constructor(public isSuper: boolean = true) {}
 
-  protect sayHello():void {
+  protected sayHello():void {
     console.log('Olá Mundo!');
   }
 }
@@ -13,7 +13,7 @@ class Subclass extends Superclass {
 };
 
 const myFunc = (supersuper: Subclass) => {
-  supersuper.sayHello();
+  supersuper.sayHello2();
 }
 
 // const superClass = new Superclass();
